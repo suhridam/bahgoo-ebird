@@ -1,0 +1,30 @@
+=== SPATIAL BLOCK HOLD-OUT ===
+Test checklists: 65341 | detections: 1142 (prevalence 1.748%) | non-finite OOB: 0
+Encounter rate: AUC = 0.882 | Brier = 0.01661 | Brier skill vs prevalence = 0.033
+Count given detection: Spearman = 0.082 (n = 1061)
+Relative abundance vs observed count (all test checklists): Spearman = 0.145 | Pearson(log1p) = 0.223
+Calibration table:
+         bin   mean_pred    obs_rate     n
+    [0,0.01] 0.003672985 0.003011457 45825
+ (0.01,0.02] 0.014078631 0.014794749  4799
+ (0.02,0.05] 0.032303016 0.026078431  5100
+  (0.05,0.1] 0.072336441 0.037960954  3688
+   (0.1,0.2] 0.141630967 0.056197075  3897
+   (0.2,0.4] 0.271986097 0.163946588  1348
+     (0.4,1] 0.537926105 0.321637427   684
+
+=== RANDOM HOLD-OUT ===
+Test checklists: 67078 | detections: 1417 (prevalence 2.112%) | non-finite OOB: 0
+Encounter rate: AUC = 0.934 | Brier = 0.01500 | Brier skill vs prevalence = 0.275
+Count given detection: Spearman = 0.414 (n = 1341)
+Relative abundance vs observed count (all test checklists): Spearman = 0.197 | Pearson(log1p) = 0.459
+Calibration table:
+         bin   mean_pred    obs_rate     n
+    [0,0.01] 0.003433478 0.002893561 54604
+ (0.01,0.02] 0.014027626 0.017566191  3928
+ (0.02,0.05] 0.031424675 0.036685642  3162
+  (0.05,0.1] 0.071690303 0.065217391  1978
+   (0.1,0.2] 0.140866771 0.140540541  1850
+   (0.2,0.4] 0.275153446 0.278447122   747
+     (0.4,1] 0.594113709 0.589616811   809
+
